@@ -1,10 +1,22 @@
 import React from 'react';
+import './Loader.css';
 // import PropTypes from 'prop-types';
 
-function Welcome() {
-  return <h1>Hello</h1>;
+function Loader () {
+  return (
+    <div
+      style={{
+        display: 'flex',
+        height: '100vh',
+        justifyContent: 'center',
+        alignItems: 'center'
+      }}
+    >
+      <div class='loader box-rotation'></div>
+    </div>
+  );
 }
 
-// Welcome.PropTypes = {};
+// Loader.propTypes = {};
 
-export default Welcome;
+export default Loader;

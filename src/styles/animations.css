@@ -1,0 +1,20 @@
+/* Loader Animation */
+@keyframes rect-rotate {
+  0% {
+    transform: rotate(0);
+  }
+  50%,
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes fill-rect {
+  0%,
+  50% {
+    height: 0px;
+  }
+  100% {
+    height: inherit;
+  }
+}

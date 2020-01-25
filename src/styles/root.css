@@ -1,0 +1,29 @@
+/*css vars here*/
+:root {
+  --color-primary: #343ca3;
+  --color-secondary: #fff;
+
+  /* Loader CSS */
+  --loader-width: 30px;
+  --loader-height: 40px;
+  --line-width: 3px;
+  --animation-duration: 1.2s;
+  --loader-initial-scale: 0.1;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+}
+
+body {
+}
+
+::-webkit-scrollbar {
+}
+
+::-webkit-scrollbar-thumb {
+}

@@ -1,8 +1,8 @@
 import React from 'react';
-import Welcome from '../../common/loader/Loader.js';
+import Loader from '../../common/loader';
 
 function App() {
-  return <Welcome />;
+  return <Loader />;
 }
 
 export default App;
