@@ -12,7 +12,7 @@
 @keyframes fill-rect {
   0%,
   50% {
-    height: 0px;
+    height: 0rem;
   }
   100% {
     height: inherit;

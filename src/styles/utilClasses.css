@@ -14,4 +14,55 @@
 .fade-in {
 }
 
+.link {
+  color: var(--color-primary);
+}
+
 /******** OTHER reusable classes *********/
+.paper {
+  text-align: center;
+  border-radius: 0;
+  flex-grow: 1;
+  box-shadow: none !important;
+  border-color: none;
+}
+.--paper-circle {
+  display: inline-block;
+  border: var(--GO-border-width) solid var(--color-primary);
+  color: var(--color-primary);
+  border-radius: 100%;
+  padding: var(--GO-padding);
+  font-size: var(--GO-font_size);
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.hoplaList {
+  list-style-type: none;
+  font-size: 0.8rem;
+  text-align: left;
+}
+.hoplaList .hoplaList {
+  margin-left: 1rem;
+  font-size: 1.5rem;
+}
+.--hoplaList--hoplaList_item {
+  color: var(--color-grey);
+}
+
+.hoplaList .hoplaList .--hoplaList--hoplaList_item {
+  color: var(--color-primary);
+}
+
+@media (max-width: 450px) {
+  :root {
+    /* GO CSS */
+    --GO-border-width: 0.5rem;
+  }
+  .hoplaList {
+    font-size: 1rem;
+  }
+  .hoplaList .hoplaList {
+    font-size: 2rem;
+  }
+}

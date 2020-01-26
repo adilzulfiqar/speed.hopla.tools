@@ -1,0 +1,81 @@
+.List {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 450px) {
+  .List {
+    justify-content: start;
+    margin: 1rem 0 0 4.4rem;
+    /* margin-left: 20px; */
+  }
+  .mobile-paper-go {
+    height: 35vh !important;
+    margin: 2rem 0 0 0;
+  }
+  .mobile-paper-List {
+    height: 65vh !important;
+  }
+}
+
+@media (width: 320px) {
+  /*iPhone4 CSS*/
+  .List {
+    margin-left: 1.5rem;
+  }
+  .mobile-paper-go {
+    height: 100% !important;
+    margin: 2rem 0 0 0;
+  }
+  .mobile-paper-List {
+    height: 100% !important;
+  }
+}
+
+@media (width: 480px) {
+  /*iPhone4 CSS Landscape*/
+  .List {
+    margin-left: 1.5rem;
+  }
+  .mobile-paper-go {
+    height: 100% !important;
+    margin: 2rem 0 0 0;
+  }
+  .mobile-paper-List {
+    height: 100% !important;
+  }
+  .MuiGrid-grid-xs-12 {
+    flex-basis: 50% !important;
+  }
+}
+@media (width: 568px) {
+  .MuiGrid-grid-xs-12 {
+    flex-basis: 50% !important;
+  }
+}
+@media (width: 240px) {
+  /*JioPhone2 CSS*/
+
+  :root {
+    /* GO CSS */
+    --GO-border-width: 0.3rem;
+    --GO-padding: 2rem;
+  }
+
+  .List {
+    margin-left: 1.5rem;
+  }
+  .mobile-paper-go {
+    height: 100% !important;
+    margin: 2rem 0 0 0;
+  }
+  .mobile-paper-List {
+    height: 100% !important;
+  }
+  .hoplaList {
+    font-size: 0.5rem;
+  }
+  .hoplaList .hoplaList {
+    font-size: 1.5rem;
+  }
+}

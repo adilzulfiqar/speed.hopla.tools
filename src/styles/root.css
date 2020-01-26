@@ -2,13 +2,19 @@
 :root {
   --color-primary: #343ca3;
   --color-secondary: #fff;
+  --color-grey: grey;
 
-  /* Loader CSS */
-  --loader-width: 30px;
-  --loader-height: 40px;
-  --line-width: 3px;
+  /* Loader VARIABLES */
+  --loader-width: 2rem;
+  --loader-height: 3rem;
+  --line-width: 0.4rem;
   --animation-duration: 1.2s;
   --loader-initial-scale: 0.1;
+
+  /* GO CSS */
+  --GO-border-width: 0.3rem;
+  --GO-padding: 4rem;
+  --GO-font_size: 3rem;
 }
 
 * {
@@ -22,8 +28,29 @@ html {
 body {
 }
 
+#root {
+  height: 100vh;
+}
+
+.centered-position {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 ::-webkit-scrollbar {
 }
 
 ::-webkit-scrollbar-thumb {
+}
+
+@media (max-width: 450px) {
+  :root {
+    /* GO CSS */
+    --GO-border-width: 0.5rem;
+  }
+  .centered-position {
+    top: 0;
+    transform: translateY(0);
+  }
 }

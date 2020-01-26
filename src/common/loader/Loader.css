@@ -9,18 +9,18 @@ The loaders use CSS custom properties (variables) to control the attributes of t
   flex-shrink: 0;
 }
 
-.loader.box-rotation {
+.loader.--loader-box_rotation {
   transform-origin: center center;
   color: var(--color-primary);
   width: var(--loader-width);
-  height: var(--loader-height, 100px);
+  height: var(--loader-height);
   position: relative;
-  border: var(--line-width, 4px) solid;
+  border: var(--line-width) solid;
   display: inline-block;
   animation: rect-rotate var(--animation-duration) linear infinite;
 }
 
-.loader.box-rotation::after {
+.loader.--loader-box_rotation::after {
   content: '';
   width: 100%;
   height: 100%;
