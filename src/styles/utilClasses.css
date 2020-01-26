@@ -25,6 +25,7 @@
   flex-grow: 1;
   box-shadow: none !important;
   border-color: none;
+  background: none !important;
 }
 .--paper-circle {
   display: inline-block;

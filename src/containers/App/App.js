@@ -2,14 +2,14 @@ import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Loader from '../../common/Loader';
 
-const SpeadTest = React.lazy(() => import('../../SpeadTest'));
+const SpeedTest = React.lazy(() => import('../../SpeedTest'));
 
 function App() {
   return (
     <Router>
       <React.Suspense fallback={<Loader />}>
         <Route path='/' exact>
-          <SpeadTest />
+          <SpeedTest />
         </Route>
       </React.Suspense>
     </Router>

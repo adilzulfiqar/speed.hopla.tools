@@ -18,3 +18,15 @@
     height: inherit;
   }
 }
+
+@keyframes meter-pin {
+  0% {
+    transform: rotate(-114deg);
+  }
+  75% {
+    transform: rotate(175deg);
+  }
+  100% {
+    transform: rotate(-114deg);
+  }
+}

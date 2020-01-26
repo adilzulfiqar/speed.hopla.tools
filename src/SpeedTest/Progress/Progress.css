@@ -1,0 +1,195 @@
+.show-on-xs {
+  display: none;
+}
+.progress-container {
+  margin-top: -50px;
+}
+.hoplaListProgress {
+  margin-left: 0 !important;
+  text-align: left;
+}
+.List {
+  margin-left: 0 !important;
+}
+.paper-speed-meter {
+  margin-top: 150px;
+}
+.progress-info-right {
+  margin-left: -4rem;
+}
+
+.progress-info-left {
+  margin-right: -4rem;
+}
+
+/* Speed Meter CSS */
+.speed-meter {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  box-sizing: border-box;
+  border-width: 0.5rem;
+  text-align: center;
+}
+.speed-meter span {
+  position: absolute;
+  left: 75px;
+  top: 78px;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.speed-meter span:nth-of-type(1) {
+  transform: translate(-67px, 30px);
+}
+.speed-meter span:nth-of-type(2) {
+  transform: translate(-60px, -39px);
+}
+.speed-meter span:nth-of-type(3) {
+  transform: translate(0px, -78px);
+}
+.speed-meter span:nth-of-type(4) {
+  transform: translate(62px, -39px);
+}
+.speed-meter span:nth-of-type(5) {
+  transform: translate(66px, 30px);
+}
+
+.speed-meter img {
+  position: absolute;
+  top: 58px;
+  left: 17px;
+  transform-origin: 75% 73%;
+  transform: rotate(-114deg);
+  transition: 0.2s;
+  animation: meter-pin 1s ease-in-out;
+}
+
+@media (max-width: 450px) {
+  .hoplaList {
+    font-size: 1rem;
+  }
+  .hoplaList .hoplaList {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .hide-on-xs {
+    display: none;
+  }
+  .show-on-xs {
+    display: block;
+  }
+  .adjust-half-screen-mobile {
+    height: 50vh;
+    margin-top: 30px !important;
+  }
+  .speed-meter {
+    transform: scale(1.5);
+  }
+  .paper-speed-meter {
+    margin-top: 0px;
+  }
+  .progress-info-right {
+    margin-left: 4rem;
+    margin-top: 100px;
+  }
+
+  .progress-info-left {
+    margin-top: 100px;
+    margin-left: 30px;
+  }
+  .progress-container {
+    margin-top: 0px;
+  }
+}
+
+@media (width: 320px) {
+  /*iPhone4 CSS*/
+  .hoplaList {
+    font-size: 1rem;
+  }
+  .hoplaList .hoplaList {
+    font-size: 1.5rem;
+  }
+  .adjust-half-screen-mobile {
+    margin-top: 0px !important;
+  }
+  .speed-meter {
+    transform: scale(0.7);
+  }
+  .paper-speed-meter {
+    margin-top: 0px;
+  }
+  .progress-info-right {
+    margin-left: 2rem;
+    margin-top: 80px;
+  }
+
+  .progress-info-left {
+    margin-top: 80px;
+  }
+}
+
+@media (width: 480px) {
+  /*iPhone4 CSS Landscape*/
+  .MuiGrid-grid-xs-12.adjust-half-screen-mobile {
+    flex-basis: 50% !important;
+  }
+  .hide-on-xs {
+    display: block !important;
+  }
+  .show-on-xs {
+    display: none !important;
+  }
+  .speed-meter {
+    transform: scale(0.6);
+  }
+  .iPhone4-landscape-25 {
+    max-width: 25% !important;
+    flex-basis: 25% !important;
+  }
+}
+
+@media (width: 240px) {
+  /*iPhone4 CSS*/
+  .hoplaList {
+    font-size: 0.5rem;
+  }
+  .hoplaList .hoplaList {
+    font-size: 1rem;
+  }
+  .adjust-half-screen-mobile {
+    margin-top: 0px !important;
+  }
+  .speed-meter {
+    transform: scale(0.7);
+  }
+  .progress-info-right {
+    margin-left: 2rem;
+    margin-top: 80px;
+  }
+
+  .progress-info-left {
+    margin-top: 80px;
+  }
+}
+
+@media (width: 568px) {
+  /*iPhone5/SE CSS Landscape*/
+  .MuiGrid-grid-xs-12.adjust-half-screen-mobile {
+    flex-basis: 50% !important;
+  }
+  .hide-on-xs {
+    display: block !important;
+  }
+  .show-on-xs {
+    display: none !important;
+  }
+  .speed-meter {
+    transform: scale(0.6);
+  }
+  .iPhone4-landscape-25 {
+    max-width: 25% !important;
+    flex-basis: 25% !important;
+  }
+}

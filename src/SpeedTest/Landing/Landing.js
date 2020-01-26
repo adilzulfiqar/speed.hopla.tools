@@ -1,5 +1,4 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { Container, Paper, Grid, Link } from '@material-ui/core';
 import './Landing.css';
@@ -29,10 +28,7 @@ function Landing(props) {
             </Paper>
           </Grid>
           <Grid item xs={12} sm={6} style={{ height: '100%' }}>
-            <Paper
-              className={classnames('paper', 'mobile-paper-List')}
-              style={{ height: '100%' }}
-            >
+            <Paper className={classnames('paper', 'mobile-paper-List')}>
               <div className='List'>
                 <ul className='hoplaList'>
                   <li className='--hoplaList--hoplaList_item'>IP ADDRESS</li>
@@ -68,7 +64,5 @@ function Landing(props) {
     </div>
   );
 }
-
-// Landing.propTypes = {};
 
 export default Landing;
