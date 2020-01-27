@@ -65,6 +65,29 @@
   animation: meter-pin 1s ease-in-out;
 }
 
+/* Handling responsive Issue */
+@media (min-width: 450px) and (max-width: 600px) {
+  .MuiGrid-grid-xs-12 {
+    max-width: 25% !important;
+    flex-basis: 25% !important;
+  }
+  .paper-speed-meter {
+    margin-left: -64px !important;
+  }
+  .MuiGrid-grid-xs-6 {
+    max-width: 25% !important;
+    flex-basis: 25% !important;
+  }
+  .speed-meter {
+    transform: scale(0.5) !important;
+  }
+}
+@media (min-width: 450px) and (max-width: 600px) {
+  .paper-speed-meter {
+    margin-left: -50px !important;
+  }
+}
+
 @media (max-width: 450px) {
   .hoplaList {
     font-size: 1rem;

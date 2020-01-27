@@ -4,7 +4,7 @@ import { Container, Paper, Grid } from '@material-ui/core';
 import Arrow from '../../assets/images/arrow.png';
 import './Progress.css';
 
-export default function Progress() {
+export default function Progress () {
   return (
     <div className='centered-position'>
       <Container maxWidth='sm'>
