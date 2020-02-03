@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Loader from 'src/common/Loader/index.js';
+import Loader from '../../common/Loader/index.js';
 
 const SpeedTest = React.lazy(() => import('../../SpeedTest'));
 
