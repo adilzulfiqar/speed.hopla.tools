@@ -1,9 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { Container, Paper, Grid, Link } from '@material-ui/core';
 import './Landing.css';
 
-function Landing(props) {
+function Landing({ startSpeedTest }) {
   const preventDefault = () => {};
   return (
     <div className='centered-position'>
@@ -20,7 +21,9 @@ function Landing(props) {
               className={classnames('paper', 'mobile-paper-go')}
               style={{ height: '100%' }}
             >
-              <span className='--paper-circle'>GO</span>
+              <span onClick={startSpeedTest} className='--paper-circle'>
+                GO
+              </span>
               <br />
               <Link href='#' onClick={preventDefault}>
                 Want to save your Results? Login
@@ -43,6 +46,10 @@ function Landing(props) {
                   <ul className='hoplaList'>
                     <li className='--hoplaList--hoplaList_item'>ASIA</li>
                   </ul>
+                  <li className='--hoplaList--hoplaList_item'>COUNTRY</li>
+                  <ul className='hoplaList'>
+                    <li className='--hoplaList--hoplaList_item'>PAKISTAN</li>
+                  </ul>
                   <li className='--hoplaList--hoplaList_item'>PROVIDER</li>
                   <ul className='hoplaList'>
                     <li className='--hoplaList--hoplaList_item'>no thing</li>
@@ -64,5 +71,9 @@ function Landing(props) {
     </div>
   );
 }
+
+Landing.propTypes = {
+  startSpeedTest: PropTypes.func.isRequired
+};
 
 export default Landing;

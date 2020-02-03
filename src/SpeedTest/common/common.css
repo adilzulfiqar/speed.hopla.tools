@@ -1,0 +1,26 @@
+.result-history {
+  /* display: flex; */
+  margin-top: 5px;
+}
+.result-history_header {
+  display: flex;
+}
+.result-history_header > div {
+  width: 25%;
+  background: var(--color-grey);
+  color: var(--color-secondary);
+}
+.result-history_header > div span {
+}
+.result-history_header > div h1 {
+  color: var(--color-primary);
+  font-size: 2.5rem !important;
+  font-weight: lighter;
+}
+.result-history_footer {
+  background: var(--color-primary);
+  color: var(--color-secondary);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3px;
+}

@@ -1,0 +1,6 @@
+@media (max-width: 450px) {
+  .history .adjust-half-screen-mobile {
+    height: 50vh !important;
+    margin-top: 30px !important;
+  }
+}

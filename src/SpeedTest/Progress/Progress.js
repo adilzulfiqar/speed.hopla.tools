@@ -1,10 +1,12 @@
 import React from 'react';
 import classnames from 'classnames';
 import { Container, Paper, Grid } from '@material-ui/core';
+import PingJitter from '../common/PingJitter.js';
+import DownloadUpload from '../common/DownloadUpload.js';
 import Arrow from '../../assets/images/arrow.png';
 import './Progress.css';
 
-export default function Progress () {
+export default function Progress() {
   return (
     <div className='centered-position'>
       <Container maxWidth='sm'>
@@ -22,28 +24,7 @@ export default function Progress () {
             sm={3}
             className='adjust-half-screen-mobile iPhone4-landscape-25'
           >
-            <Paper className={classnames('paper', 'progress-info-left')}>
-              <div className='List'>
-                <ul className='hoplaList'>
-                  <li className='--hoplaList--hoplaList_item'>
-                    PING <small>ms</small>
-                  </li>
-                  <ul className={classnames('hoplaList', 'hoplaListProgress')}>
-                    <li className='--hoplaList--hoplaList_item'>12</li>
-                  </ul>
-                </ul>
-              </div>
-              <div className='List'>
-                <ul className='hoplaList'>
-                  <li className='--hoplaList--hoplaList_item'>
-                    JITTER <small>ms</small>
-                  </li>
-                  <ul className={classnames('hoplaList', 'hoplaListProgress')}>
-                    <li className='--hoplaList--hoplaList_item'>7</li>
-                  </ul>
-                </ul>
-              </div>
-            </Paper>
+            <PingJitter />
           </Grid>
           <Grid
             item
@@ -51,28 +32,7 @@ export default function Progress () {
             sm={3}
             className='show-on-xs adjust-half-screen-mobile'
           >
-            <Paper className={classnames('paper', 'progress-info-right')}>
-              <div className={classnames('List')}>
-                <ul className='hoplaList'>
-                  <li className='--hoplaList--hoplaList_item'>
-                    DOWNLOAD <small>ms</small>
-                  </li>
-                  <ul className={classnames('hoplaList', 'hoplaListProgress')}>
-                    <li className='--hoplaList--hoplaList_item'>12.2</li>
-                  </ul>
-                </ul>
-              </div>
-              <div className='List'>
-                <ul className='hoplaList'>
-                  <li className='--hoplaList--hoplaList_item'>
-                    UPLOAD <small>ms</small>
-                  </li>
-                  <ul className={classnames('hoplaList', 'hoplaListProgress')}>
-                    <li className='--hoplaList--hoplaList_item'>7</li>
-                  </ul>
-                </ul>
-              </div>
-            </Paper>
+            <DownloadUpload />
           </Grid>
           <Grid
             item
@@ -92,28 +52,7 @@ export default function Progress () {
             </Paper>
           </Grid>
           <Grid item xs={12} sm={3} className='hide-on-xs iPhone4-landscape-25'>
-            <Paper className={classnames('paper', 'progress-info-right')}>
-              <div className={classnames('List')}>
-                <ul className='hoplaList'>
-                  <li className='--hoplaList--hoplaList_item'>
-                    DOWNLOAD <small>ms</small>
-                  </li>
-                  <ul className={classnames('hoplaList', 'hoplaListProgress')}>
-                    <li className='--hoplaList--hoplaList_item'>12.2</li>
-                  </ul>
-                </ul>
-              </div>
-              <div className='List'>
-                <ul className='hoplaList'>
-                  <li className='--hoplaList--hoplaList_item'>
-                    UPLOAD <small>ms</small>
-                  </li>
-                  <ul className={classnames('hoplaList', 'hoplaListProgress')}>
-                    <li className='--hoplaList--hoplaList_item'>7</li>
-                  </ul>
-                </ul>
-              </div>
-            </Paper>
+            <DownloadUpload />
           </Grid>
         </Grid>
       </Container>

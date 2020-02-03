@@ -79,3 +79,13 @@
     font-size: 1.5rem;
   }
 }
+
+@media (width: 568px) {
+  /*iPhone5/SE CSS Landscape*/
+  .hoplaList {
+    font-size: 0.5rem;
+  }
+  .hoplaList .hoplaList {
+    font-size: 1.2rem;
+  }
+}

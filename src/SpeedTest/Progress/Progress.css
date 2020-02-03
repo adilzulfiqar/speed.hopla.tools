@@ -9,18 +9,19 @@
   text-align: left;
 }
 .List {
-  margin-left: 0 !important;
+  margin-left: 30px !important;
 }
 .paper-speed-meter {
   margin-top: 150px;
+  margin-left: 00px;
 }
-.progress-info-right {
+/* .progress-info-right {
   margin-left: -4rem;
 }
 
 .progress-info-left {
   margin-right: -4rem;
-}
+} */
 
 /* Speed Meter CSS */
 .speed-meter {
@@ -67,7 +68,7 @@
 
 /* Handling responsive Issue */
 @media (min-width: 450px) and (max-width: 600px) {
-  .MuiGrid-grid-xs-12 {
+  .progress-container .MuiGrid-grid-xs-12 {
     max-width: 25% !important;
     flex-basis: 25% !important;
   }
@@ -89,10 +90,10 @@
 }
 
 @media (max-width: 450px) {
-  .hoplaList {
+  .progress-container .hoplaList {
     font-size: 1rem;
   }
-  .hoplaList .hoplaList {
+  .progress-container .hoplaList .hoplaList {
     font-size: 3rem;
     font-weight: bold;
   }
@@ -102,7 +103,7 @@
   .show-on-xs {
     display: block;
   }
-  .adjust-half-screen-mobile {
+  .progress-container .adjust-half-screen-mobile {
     height: 50vh;
     margin-top: 30px !important;
   }
@@ -111,15 +112,16 @@
   }
   .paper-speed-meter {
     margin-top: 0px;
+    margin-left: 0 !important;
   }
   .progress-info-right {
-    margin-left: 4rem;
+    /* margin-left: 0rem; */
     margin-top: 100px;
   }
 
   .progress-info-left {
     margin-top: 100px;
-    margin-left: 30px;
+    /* margin-left: 0px; */
   }
   .progress-container {
     margin-top: 0px;
@@ -128,13 +130,13 @@
 
 @media (width: 320px) {
   /*iPhone4 CSS*/
-  .hoplaList {
+  .progress-container .hoplaList {
     font-size: 1rem;
   }
-  .hoplaList .hoplaList {
+  .progress-container .hoplaList .hoplaList {
     font-size: 1.5rem;
   }
-  .adjust-half-screen-mobile {
+  .progress-container .adjust-half-screen-mobile {
     margin-top: 0px !important;
   }
   .speed-meter {
@@ -142,6 +144,7 @@
   }
   .paper-speed-meter {
     margin-top: 0px;
+    margin-left: 0;
   }
   .progress-info-right {
     margin-left: 2rem;
@@ -155,7 +158,7 @@
 
 @media (width: 480px) {
   /*iPhone4 CSS Landscape*/
-  .MuiGrid-grid-xs-12.adjust-half-screen-mobile {
+  .progress-container .MuiGrid-grid-xs-12.adjust-half-screen-mobile {
     flex-basis: 50% !important;
   }
   .hide-on-xs {
@@ -167,6 +170,9 @@
   .speed-meter {
     transform: scale(0.6);
   }
+  .paper-speed-meter {
+    /* margin-left: -80px !important; */
+  }
   .iPhone4-landscape-25 {
     max-width: 25% !important;
     flex-basis: 25% !important;
@@ -175,13 +181,13 @@
 
 @media (width: 240px) {
   /*iPhone4 CSS*/
-  .hoplaList {
+  .progress-container .hoplaList {
     font-size: 0.5rem;
   }
-  .hoplaList .hoplaList {
+  .progress-container .hoplaList .hoplaList {
     font-size: 1rem;
   }
-  .adjust-half-screen-mobile {
+  .progress-container .adjust-half-screen-mobile {
     margin-top: 0px !important;
   }
   .speed-meter {
@@ -199,7 +205,7 @@
 
 @media (width: 568px) {
   /*iPhone5/SE CSS Landscape*/
-  .MuiGrid-grid-xs-12.adjust-half-screen-mobile {
+  .progress-container .MuiGrid-grid-xs-12.adjust-half-screen-mobile {
     flex-basis: 50% !important;
   }
   .hide-on-xs {
@@ -207,6 +213,9 @@
   }
   .show-on-xs {
     display: none !important;
+  }
+  .paper-speed-meter {
+    margin-left: -30px !important;
   }
   .speed-meter {
     transform: scale(0.6);

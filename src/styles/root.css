@@ -2,7 +2,7 @@
 :root {
   --color-primary: #343ca3;
   --color-secondary: #fff;
-  --color-grey: grey;
+  --color-grey: #c4c4c4;
 
   /* Loader VARIABLES */
   --loader-width: 2rem;

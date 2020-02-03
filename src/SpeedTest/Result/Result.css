@@ -1,0 +1,140 @@
+.result-score {
+  text-align: center;
+  margin-left: -50px !important;
+}
+.result-score h3 {
+  font-size: 16px;
+  font-weight: lighter;
+  color: var(--color-grey);
+}
+
+.result-score h1 {
+  font-size: 25px;
+  font-weight: lighter;
+  color: var(--color-primary);
+}
+.results-container .List {
+  margin-left: 0 !important;
+}
+.results {
+  margin-top: 30px;
+}
+.results .hoplaList {
+  font-size: 0.5rem;
+  margin-left: 45px;
+}
+.results .hoplaList .hoplaList {
+  font-size: 1rem;
+  margin-left: 0px;
+}
+.show-on-xs {
+  display: none;
+}
+.hide-on-xs {
+  display: block;
+}
+
+@media (max-width: 650px) {
+  .results .hoplaList {
+    margin-left: 25px;
+  }
+}
+
+@media (max-width: 450px) {
+  .show-on-xs {
+    display: block;
+  }
+  .hide-on-xs {
+    display: none;
+  }
+  .results-container {
+    align-items: flex-end !important;
+    height: 50vh;
+  }
+  .results-container .List {
+    margin-left: 30px !important;
+  }
+  .results-container .hoplaList {
+    font-size: 16px;
+  }
+  .results-container .hoplaList .hoplaList {
+    font-size: 30px;
+    font-weight: bolder;
+  }
+
+  .result-score h3 {
+    font-size: 1rem;
+  }
+
+  .result-score h1 {
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+
+  .results {
+    align-items: flex-start !important;
+    height: 50vh;
+    padding-top: 20px;
+  }
+  .results .hoplaList {
+    font-size: 1rem;
+    margin-left: 20px;
+  }
+  .results .hoplaList .hoplaList {
+    font-size: 1.5rem;
+    margin-left: 0px;
+  }
+}
+
+@media (width: 320px) {
+  /*iPhone4 CSS*/
+  .results-container .hoplaList {
+    font-size: 1rem;
+  }
+  .results-container .hoplaList .hoplaList {
+    font-size: 1.5rem;
+  }
+
+  .result-score h3 {
+    font-size: 1rem;
+  }
+
+  .result-score h1 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+
+  .results .hoplaList {
+    font-size: 0.5rem;
+  }
+  .results .hoplaList .hoplaList {
+    font-size: 1rem;
+  }
+}
+
+@media (width: 240px) {
+  /*iPhone4 CSS*/
+  .results-container .hoplaList {
+    font-size: 0.5rem;
+  }
+  .results-container .hoplaList .hoplaList {
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+
+  .result-score h3 {
+    font-size: 0.5rem;
+  }
+
+  .result-score h1 {
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+
+  .results .hoplaList {
+    font-size: 0.3rem;
+  }
+  .results .hoplaList .hoplaList {
+    font-size: 0.7rem;
+  }
+}
