@@ -63,7 +63,6 @@
   transform-origin: 75% 73%;
   transform: rotate(-114deg);
   transition: 0.2s;
-  animation: meter-pin 1s ease-in-out;
 }
 
 /* Handling responsive Issue */
