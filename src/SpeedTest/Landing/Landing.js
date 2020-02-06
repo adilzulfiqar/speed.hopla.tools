@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { Container, Paper, Grid, Link } from '@material-ui/core';
-import Loader from '../../assets/images/getting-loader.gif';
+// import Loader from '../../assets/images/getting-loader.gif';
 import './Landing.css';
 
 function Landing({ startSpeedTest, data }) {

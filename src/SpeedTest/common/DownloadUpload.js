@@ -1,8 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { Paper } from '@material-ui/core';
 
-export default function DownloadUpload() {
+export default function DownloadUpload({ downloadSpeed }) {
   return (
     <Paper className={classnames('paper', 'progress-info-right')}>
       <div className={classnames('List')}>
@@ -11,7 +12,7 @@ export default function DownloadUpload() {
             DOWNLOAD <small>ms</small>
           </li>
           <ul className={classnames('hoplaList', 'hoplaListProgress')}>
-            <li className='--hoplaList--hoplaList_item'>12.2</li>
+            <li className='--hoplaList--hoplaList_item'>{downloadSpeed}</li>
           </ul>
         </ul>
       </div>
@@ -28,3 +29,5 @@ export default function DownloadUpload() {
     </Paper>
   );
 }
+
+DownloadUpload.propTypes = { downloadSpeed: PropTypes.string };
